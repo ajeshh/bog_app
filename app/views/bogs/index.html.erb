@@ -1,0 +1,10 @@
+<% @bogs.each do |bog| %>
+
+    <div>
+       
+    <%= link_to bog.url, bog.url %>
+        Name: <%= bog[:name] %> <br>
+        Description: <%= bog[:description] %></a>
+    </div> 
+
+<% end %>

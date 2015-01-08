@@ -1,0 +1,15 @@
+    <div>
+        Name: <%= @bog.name %> <br>
+        Description: <%= @bog.description %>
+
+
+    <form action="/bogs/<%= @bog.id %>" method="delete">
+<input type="hidden" name="_method" value="put">
+<button> Delete </button>
+
+
+    <form action="/bogs/<%= @bog.id %>" method="edit">
+<input type="hidden" name="_method" value="put">
+<button> edit </button>
+
+    </div>
